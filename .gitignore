@@ -1,0 +1,13 @@
+# Build artifacts
+build/
+*.bin
+*.elf
+
+# Editor / OS
+.vscode/
+.DS_Store
+*.log
+
+# Node / web
+node_modules/
+dist/
