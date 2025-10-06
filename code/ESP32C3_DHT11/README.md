@@ -14,4 +14,25 @@ Der C3 liest die Messwerte des DHT11 aus
 - C3 mit dem DHT11 verbinden über GPIO 5 des C3 und den Datenoutput des DHT11
 - Temperatur und Luftfeuchtigkeitswerte im Seriellen Monitor auslesen
 
+### Schaltplan
+
++-----------+
+       |   DHT11   |
+       |           |
+       |  VCC  ───┐
+       |  GND  ──┐│
+       |  DATA ──┘│
+       +-----------+
+            │
+            │ DATA
+            │
+           GPIO5
+            │
+       +-----------+
+       |  ESP32-C3 |
+       |           |
+       |   GND     ────── GND
+       |   3.3V    ────── VCC DHT11
+       +-----------+
+
 
